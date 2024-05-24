@@ -1,0 +1,16 @@
+transformers
+bitsandbytes
+accelerate
+peft
+pandas
+pyarrow
+jsonlines
+wandb
+einops
+einops_exts
+sentencepiece
+causal-conv1d>=1.2.0
+mamba-ssm
+timm
+shortuuid
+matplotlib

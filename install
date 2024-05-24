@@ -1,0 +1,12 @@
+#!/bin/bash
+conda create -n meteor python=3.11
+conda activate meteor
+
+# torch
+pip3 install torch torchvision
+
+# flash attention
+pip install flash-attn --no-build-isolation
+
+# claude api
+pip install anthropic
