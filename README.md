@@ -53,17 +53,26 @@ Closed-source LLVMs
 
 ## 😎 How to run demo?
 
-Run the following order
+Run the following order.
 ```shell
 bash install
 conda activate meteor
 pip install -r requirements.txt
 ```
-and run the demo (Enjoy Meteor)
+and run the demo (Enjoy Meteor).
 ```shell
 python demo.py
 ```
 
+(Optional) If you want to enjoy the curated question-ratinale-answer triples, then you should debug the following file.
+```shell
+python check_dataset.py
+```
+
+(Optional) If you want to conduct the vision language evaluation, then you should run the following file.
+```shell
+bash run
+```
 
 
 ## 📋 Gathered & Curated Dataset Description
