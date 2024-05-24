@@ -18,9 +18,6 @@ def freeze_model(model):
     for param in model.parameters():
         param.requires_grad=False
 
-# for name, param in model.named_parameters():
-#     print(f'{name}: {param.dtype} {param.requires_grad}')
-
 def find_special_token(string, special_token):
     start = 0
     while True:

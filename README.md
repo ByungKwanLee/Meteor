@@ -7,6 +7,7 @@
 - Curated 1.1M Question-Rationale-Answer Triples are soon released in 🤗 Huggingface Datasets.
 - Preprint of Meteor is soon uploaded in ArXiv.
 
+![ezgif-1-389577e9b3](https://github.com/ByungKwanLee/Meteor/assets/50401429/4a2e382a-8da5-4f29-882f-52d8594d01c2)
 
 Official PyTorch implementation code for realizing the technical part of *Mamba-based traversal of rationale (Meteor)* to improve numerous vision language performances with efficient model size. This code is developed from scratch. so I have been trying to improve the readibility and simplicity of the code, compared with LLaVA which has relatively complexly structured code.
 

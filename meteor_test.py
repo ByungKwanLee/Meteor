@@ -80,11 +80,12 @@ def test(args):
     accel = Accelerator(kwargs_handlers=[InitProcessGroupKwargs(timeout=timedelta(seconds=18000))])
 
     # loading meteor model
-    mmamba = load_mmamba()
-    meteor, tok_meteor = load_meteor(bits=args.bits)
+    mmamba = load_mmamba('BK-Lee/Meteor-Mamba').cuda()
+    meteor, tok_meteor = load_meteor('BK-Lee/Meteor-MLM', bits=4)
 
-    # initialize mmamba and meteor vision projection
-    mmamba.initialize_others(tok_meteor)
+    # freeze model
+    freeze_model(mmamba)
+    freeze_model(meteor)
 
     # Select datasets to eval
     if args.dataset[0] == "all":
@@ -107,16 +108,6 @@ def test(args):
                                     num_workers=16,
                                     pin_memory=True,
                                     collate_fn=lambda x: x)
-
-        
-        if data in ["mm-vet", "llava"]:
-            eval_mode = 'step3'
-        else:
-            eval_mode = 'step2'
-
-        # Parameter arrangement
-        param_arrange(mmamba, args.mode, eval_mode)
-        param_arrange(meteor, args.mode, eval_mode)
 
         # accel model
         mmamba = mmamba.cuda()
@@ -192,13 +183,6 @@ if __name__ == "__main__":
     parser.add_argument('--resol', default=490, type=int)
     parser.add_argument('--bits', default=4, type=int)
     args = parser.parse_args()
-
-    # Meteor Mamba
-    args.mmamba_grad_ckpt = False
-
-    # Meteor
-    args.meteor_grad_ckpt = False
-    args.meteor_lora = True
 
     # image token num
     args.img_token_num = (args.resol // 14) ** 2
