@@ -51,6 +51,21 @@ Closed-source LLVMs
 | Meteor-7B    | **88.3** |   77.9   |   74.9   | **2229** | **82.9** |  **53.4** | **75.0** | **52.8** |
 
 
+## 😎 How to run demo?
+
+Run the following order
+```shell
+bash install
+conda activate meteor
+pip install -r requirements.txt
+```
+and run the demo (Enjoy Meteor)
+```shell
+python demo.py
+```
+
+
+
 ## 📋 Gathered & Curated Dataset Description
 Gathered Total: 2130830, 2.1M
 ```shell
