@@ -153,7 +153,7 @@ def test(args):
             decoded_text = tok_meteor.batch_decode(generate_ids, skip_special_tokens=True)
             
             # save predictions
-            all_predictions = [x.split("[UNUSED_TOKEN_146]assistant\n")[-1].split("[UNUSED_TOKEN_145]")[0].strip() for x in decoded_text]
+            all_predictions = [x.split('assistant\n')[-1].split('[U')[0].strip() for x in decoded_text]
             for x in inputs: 
                 if 'image' in x:
                     del x['image']
