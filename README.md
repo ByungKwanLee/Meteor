@@ -24,7 +24,7 @@ Open-source LLVMs with Standard Model Size
 | Yi-VL-6B      |   71.7  | 82.5 | 1915 | 64.2 |    29.7   |  67.5  |  32.1  |   51.9  |
 | LLaVA-NeXT-7B |   70.1  | 86.5 | 1851 | 69.6 |    34.6   |  70.2  |  43.9  |   72.3  |
 | MM1-7B        |   72.6  | 86.6 | 1858 | 72.3 |    35.9   |  70.9  |  42.1  |    -    |
-| Meteor-7B | **88.3**| **88.7** | **2229** | **82.9** |  **75.0** | **75.0** | **57.3** | **87.1** |
+| Meteor-7B | **88.3**| **88.7** | **2229** | **82.9** |  **53.4** | **75.0** | **57.3** | **87.1** |
 
 Open-source LLVMs with Large Model Sizes
 
@@ -56,7 +56,6 @@ Closed-source LLVMs
 Run the following order.
 ```shell
 bash install
-conda activate meteor
 pip install -r requirements.txt
 ```
 and run the demo (Enjoy Meteor).
