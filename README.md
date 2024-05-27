@@ -1,9 +1,10 @@
-# <img src="figures/meteor_emoji.png" style="vertical-align: 0px;" :height="50px" width="30px">Meteor: Mamba-based traversal of rationale for Large Language and Vision Models
+# <img src="figures/meteor_emoji.png" style="vertical-align: 0px;" :height="50px" width="30px">Meteor: Mamba-based traversal of rationale for Large Language and Vision Models [[ArXiv](https://arxiv.org/abs/2405.15574)]
 
 ## 📰 News
+- Meteor has been featured by 🤗[Huggingface daily papers](https://huggingface.co/papers?date=2024-05-27)
 - Meteor is now available in 🤗Huggingface Models: [Meteor-Mamba](https://huggingface.co/BK-Lee/Meteor-Mamba), [Meteor-MLM](https://huggingface.co/BK-Lee/Meteor-MLM).
 - Curated 1.1M Question-Rationale-Answer Triples are now available in 🤗[Huggingface Datasets](https://huggingface.co/datasets/BK-Lee/Meteor).
-- Preprint of Meteor is soon uploaded in ArXiv.
+- Preprint of Meteor has been uploaded in [ArXiv](https://arxiv.org/abs/2405.15574).
 
 ![ezgif-1-389577e9b3](https://github.com/ByungKwanLee/Meteor/assets/50401429/4a2e382a-8da5-4f29-882f-52d8594d01c2)
 
