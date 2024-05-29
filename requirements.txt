@@ -14,3 +14,4 @@ mamba-ssm
 timm
 shortuuid
 matplotlib
+gradio

@@ -1,10 +1,12 @@
 # <img src="figures/meteor_emoji.png" style="vertical-align: 0px;" :height="50px" width="30px">Meteor: Mamba-based traversal of rationale for Large Language and Vision Models [[ArXiv](https://arxiv.org/abs/2405.15574)]
 
 ## 📰 News
+- Online Demo of Meteor is now available in 🤗[Huggingface Space](https://huggingface.co/BK-Lee), thanks to ZeroGPU support (NVIDIA A100) by Huggingface Staff! However, there is ⚠️Warning that input queries are limited and lots of optimization libraries (FlashAttention2, Causal-Conv1d, Mamba-SSM) cannot be applied within its space, so inference speed is slower than this official repository.
 - Meteor has been featured by 🤗[Huggingface daily papers](https://huggingface.co/papers?date=2024-05-27)
 - Meteor is now available in 🤗Huggingface Models: [Meteor-Mamba](https://huggingface.co/BK-Lee/Meteor-Mamba), [Meteor-MLM](https://huggingface.co/BK-Lee/Meteor-MLM).
 - Curated 1.1M Question-Rationale-Answer Triples are now available in 🤗[Huggingface Datasets](https://huggingface.co/datasets/BK-Lee/Meteor).
 - Preprint of Meteor has been uploaded in [ArXiv](https://arxiv.org/abs/2405.15574).
+)
 
 ![ezgif-1-389577e9b3](https://github.com/ByungKwanLee/Meteor/assets/50401429/4a2e382a-8da5-4f29-882f-52d8594d01c2)
 
@@ -62,6 +64,11 @@ pip install -r requirements.txt
 and run the demo (Enjoy Meteor).
 ```shell
 python demo.py
+```
+
+(Optional) If you want to make 📻 Gradio demo by yourself, then you should run the following file or change it to fit your style.
+```shell
+python app.py
 ```
 
 (Optional) If you want to enjoy the curated question-ratinale-answer triples, then you should debug the following file.
