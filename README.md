@@ -1,7 +1,7 @@
 # <img src="figures/meteor_emoji.png" style="vertical-align: 0px;" :height="50px" width="30px">Meteor: Mamba-based traversal of rationale for Large Language and Vision Models [[ArXiv](https://arxiv.org/abs/2405.15574)]
 
 ## 📰 News
-- Online Demo of Meteor is now available in 🤗[Huggingface Space](https://huggingface.co/BK-Lee), thanks to ZeroGPU support (NVIDIA A100) by Huggingface Staff! However, there is ⚠️Warning that input queries are limited and lots of optimization libraries (FlashAttention2, Causal-Conv1d, Mamba-SSM) cannot be applied within its space, so inference speed is slower than this official repository.
+- Online Demo of Meteor is now available in 🤗[Huggingface Space](https://huggingface.co/BK-Lee), thanks to ZeroGPU support (NVIDIA A100) by Huggingface Staff! However, there is ⚠️Warning that input queries are limited and lots of optimization libraries (Causal-Conv1d, Mamba-SSM) cannot be applied within its space, so inference speed is slower than this official repository.
 - Meteor has been featured by 🤗[Huggingface daily papers](https://huggingface.co/papers?date=2024-05-27)
 - Meteor is now available in 🤗Huggingface Models: [Meteor-Mamba](https://huggingface.co/BK-Lee/Meteor-Mamba), [Meteor-MLM](https://huggingface.co/BK-Lee/Meteor-MLM).
 - Curated 1.1M Question-Rationale-Answer Triples are now available in 🤗[Huggingface Datasets](https://huggingface.co/datasets/BK-Lee/Meteor).

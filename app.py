@@ -1,3 +1,4 @@
+import time
 import torch
 import gradio as gr
 from config import *
@@ -87,12 +88,13 @@ def bot_streaming(message, history):
     buffer = ""
     for character in response:
         buffer += character
+        time.sleep(0.02)
         yield buffer
 
 demo = gr.ChatInterface(fn=bot_streaming, title="Meteor", 
                         description="Meteor",
                         stop_btn="Stop Generation", multimodal=True)
-demo.launch(debug=True)
+demo.launch(share=True)
 
 
 
